@@ -1,0 +1,494 @@
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="utf-8">
+  <title>Play GTA Vice City Online - Full Web Edition</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Play the complete GTA Vice City directly in your browser using WebAssembly. No downloads required. Features save files import/export and controller support.">
+  <meta name="keywords" content="quenq, reborn xp, interactive, simulator, arcade, games, retro gaming, flash games, browser games, windows xp, emulator, hobby, tech, nostalgia">
+  <meta name="robots" content="index,follow">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../../favicon-16x16.png">
+  <link rel="apple-touch-icon" href="../../apple-touch-icon.png">
+  <link rel="icon" href="../../favicon.ico" type="image/x-icon">
+
+  <meta name="theme-color" content="#43515e">
+  <link rel="canonical" href="https://quenq.com/apps/vice-city/">
+
+  
+  <meta property="og:title" content="Play GTA Vice City Online - Full Web Edition">
+<meta property="og:description" content="Experience the full GTA Vice City game directly in your web browser. No downloads, full save management support, and instant play.">
+<meta property="og:image" content="preview.jpg">
+<meta property="og:url" content="https://quenq.com/apps/vice-city/">
+<style>
+    .app-container {
+        width: 95% !important;
+    }
+    #app-iframe {
+        width: 100% !important;
+        aspect-ratio: 4 / 3 !important;
+        max-height: 90vh !important;
+        background-color: #171c20;
+        border-radius: 5px;
+        overflow: hidden;
+        margin: 0 auto;
+        border: none;
+        display: block;
+    }
+</style>
+
+  
+
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+
+  <script async="" src="https://fundingchoicesmessages.google.com/i/pub-9156391108980330?ers=1"></script>
+  <script>(function () { function signalGooglefcPresent() { if (!window.frames['googlefcPresent']) { if (document.body) { const iframe = document.createElement('iframe'); iframe.style = 'width: 0; height: 0; border: none; z-index: -1000; left: -1000px; top: -1000px;'; iframe.style.display = 'none'; iframe.name = 'googlefcPresent'; document.body.appendChild(iframe); } else { setTimeout(signalGooglefcPresent, 0); } } } signalGooglefcPresent(); })();</script>
+
+  <script async="" src="../../../pagead2.googlesyndication.com/pagead/js/adsbygoogle_client%3Dca-pub-9156391108980330.js"></script>
+
+  <!-- Google tag (gtag.js) -->
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-MQXEK55ZSS"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-MQXEK55ZSS');
+  </script>
+
+  <!-- Google Fonts Preconnect & Stylesheet -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Zalando+Sans+Expanded&amp;display=swap" rel="stylesheet">
+
+  <link href="../../css/styles_v%3D20260809.css" rel="stylesheet" type="text/css">
+
+  <!-- Schema.org WebSite JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Quenq",
+    "url": "https://quenq.com/",
+    "description": "An interactive digital museum of internet culture featuring classic games, preserved software, and browser emulators.",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://quenq.com/arcade/?search={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+</head>
+
+<body>
+
+  <div class="gutter-ad gutter-ad-left">
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-9156391108980330" data-ad-slot="3294337894" data-ad-format="auto" data-full-width-responsive="true"></ins>
+    <script>
+      if (window.innerWidth >= 1350) {
+        (adsbygoogle = window.adsbygoogle || []).push({});
+      }
+    </script>
+  </div>
+
+  <div class="gutter-ad gutter-ad-right">
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-9156391108980330" data-ad-slot="3294337894" data-ad-format="auto" data-full-width-responsive="true"></ins>
+    <script>
+      if (window.innerWidth >= 1350) {
+        (adsbygoogle = window.adsbygoogle || []).push({});
+      }
+    </script>
+  </div>
+
+  <div id="global-loader" class="global-loader">
+    <img src="../../logo.svg" alt="Loading..." class="loader-logo" draggable="false">
+  </div>
+
+  <div id="wrapper">
+    <div id="head">
+      <div id="logo"><a href="/"><img alt="Quenq Logo" src="../../logo.svg" title="Home" draggable="false"></a></div>
+      <div id="head-mid">
+        <p class="header-line1">GTA Vice City Online</p>
+        <p class="header-line2">The 1986 Miami experience, running directly in your browser.</p>
+        
+      </div>
+    </div>
+    <div id="nav-H">
+      <div id="nav-H-Box">
+        <div id="butn-block">
+          <ul>
+            <li>
+              <a class="Butn1 " href="/">Home</a>
+            </li>
+            <li>
+              <a class="Butn1 " href="/arcade/">Arcade</a>
+            </li>
+            <li>
+              <a class="Butn1 active-nav" href="/apps/">Apps</a>
+            </li>
+            <li>
+              <a class="Butn1 " href="/directory/">Directory</a>
+            </li>
+            <li>
+              <a class="Butn1 " href="/blog/">Archives</a>
+            </li>
+            <li>
+              <a class="Butn1 " href="/about/">About</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div id="main">
+      <div style="text-align: center; margin-bottom: 15px;">
+        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-9156391108980330" data-ad-slot="7378191515" data-ad-format="auto" data-full-width-responsive="true"></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      </div>
+
+      <div class="app-container">
+    <iframe id="app-iframe" src="../../../vc.quenq.com/index.html" allow="accelerometer; autoplay; bluetooth; camera; clipboard-read; clipboard-write; cross-origin-isolated; display-capture; encrypted-media; fullscreen; gamepad; geolocation; gyroscope; hid; identity-credentials-get; idle-detection; local-fonts; magnetometer; microphone; midi; payment; picture-in-picture; publickey-credentials-get; screen-wake-lock; serial; usb; web-share; window-management; xr-spatial-tracking; keyboard-map" allowfullscreen="true"></iframe>
+    <div class="player-controls">
+        <a href="#" id="share-btn" class="action-btn">
+    <svg viewBox="0 0 24 24"><path d="M18,16.08C17.24,16.08 16.56,16.38 16.04,16.85L8.91,12.7C8.96,12.47 9,12.24 9,12C9,11.76 8.96,11.53 8.91,11.3L15.96,7.2C16.5,7.69 17.21,8 18,8C19.66,8 21,6.66 21,5C21,3.34 19.66,2 18,2C16.34,2 15,3.34 15,5C15,5.24 15.04,5.47 15.09,5.7L8.04,9.8C7.5,9.31 6.79,9 6,9C4.34,9 3,10.34 3,12C3,13.66 4.34,15 6,15C6.79,15 7.5,14.69 8.04,14.2L15.17,18.35C15.12,18.58 15.08,18.79 15.08,19C15.08,20.66 16.42,22 18,22C19.66,22 21,20.66 21,19C21,17.34 19.66,16.08 18,16.08Z"></path></svg>
+Share</a>
+        <a href="#" id="fullscreen-btn" class="action-btn">
+    <svg viewBox="0 0 24 24"><path d="M5,5H10V7H7V10H5V5M14,5H19V10H17V7H14V5M17,14H19V19H14V17H17V14M10,17H7V14H5V19H10V17Z"></path></svg>
+Fullscreen</a>
+    </div>
+</div>
+
+<div id="col-L">
+    <div class="cnt-box">
+        <div class="cnt-head"><h1>About Vice City Online</h1></div>
+        <div class="cnt-filler">
+            <div class="cnt-info">
+                <p>Vice City Web Edition brings the legendary open world experience of 1986 Miami directly into your browser. Set in a sprawling, neon-soaked metropolis inspired by 1980s Miami, Vice City stands as one of the most iconic environments in gaming history.</p> 
+                
+                <p>The story follows Tommy Vercetti, a mobster recently released from prison after serving fifteen years. He is sent to Vice City by his former boss Sonny Forelli to oversee a drug deal. When the deal is ambushed and both the money and the drugs are lost, Tommy is left to pick up the pieces.</p>
+
+                <p>As he works to recover what was lost and answer to the Forelli family, Tommy becomes involved with the city's various criminal organizations and power players. Over time, he builds his own network of businesses and influence, ultimately rising to control Vice City's criminal underworld.</p>
+
+                <p>This technical port is built on the revcDOS codebase, which utilizes the reverse-engineered reVC engine. This version requires no downloads and no installation because assets stream dynamically as you play. It is a complete, self-contained experience that preserves every mission from the original 2002 release.</p>
+
+                <p><strong>Key Features:</strong></p>
+                <ul style="margin-bottom: 20px;">
+                    <li><strong>Integrated Save Manager:</strong> You can upload your existing .b save files from a PC or PS2 to resume your progress. You can also download backups to keep your virtual progress safe.</li>
+                    <li><strong>Instant Access:</strong> There are no large initial downloads. The WebAssembly engine loads in seconds and streams the map as you drive.</li>
+                    <li><strong>Cross-Platform Support:</strong> Play with a standard keyboard and mouse on desktop or use integrated touch controls on mobile devices.</li>
+                </ul>
+
+                <p><a href="/blog/ultimate-gta-vice-city-cheats/" target="_blank">Click here to view the complete list of GTA Vice City cheat codes.</a></p>
+            </div>
+        </div>
+        <div class="cnt-ft"></div>
+    </div>
+
+    <div class="cnt-box">
+    <div class="cnt-head">
+        <h1>Discussion</h1>
+    </div>
+    <div class="cnt-filler" style="text-align:center;">
+        <div class="cnt-info">
+            <div id="disqus_thread"></div>
+            <script>
+                /**
+                *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+                *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+                /*
+                var disqus_config = function () {
+                this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+                this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                };
+                */
+                (function() { // DON'T EDIT BELOW THIS LINE
+                var d = document, s = d.createElement('script');
+                s.src = 'https://quenq-com.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+                })();
+            </script>
+            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        </div>        
+    </div>
+    <div class="cnt-ft"></div>
+</div>
+
+    <div class="cnt-box">
+        <div class="cnt-head"><h1>Frequently Asked Questions</h1></div>
+        <div class="cnt-filler">
+            <div class="cnt-info">
+                <div class="faq-item">
+                    <button class="faq-question">How does the Save Manager work?</button>
+                    <div class="faq-answer"><p>The built-in Save Manager allows you to control your game data. You can download your save file (sf*.b) to your computer for safekeeping or upload an existing save file to jump instantly to a specific point in the story. This makes it easy to move progress between different devices.</p></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">Does it support controllers and mobile?</button>
+                    <div class="faq-answer"><p>Yes. The game supports standard Gamepad inputs for Xbox and PlayStation controllers via USB or Bluetooth. Mobile users can play using on-screen touch controls. We recommend using landscape mode and enabling fullscreen for the best mobile experience.</p></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">Why does the game show a black screen or run poorly?</button>
+                    <div class="faq-answer"><p>If the game does not start, shows a black screen, or suffers from heavy lag, make sure that <strong>Hardware Acceleration</strong> is enabled in your browser settings. This allows the game to use your graphics card (GPU) to render the 3D world. Without this setting enabled, the WebAssembly engine may fail to initialize.</p></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">Why are the physics acting weirdly or missions failing?</button>
+                    <div class="faq-answer"><p>By default, the frame rate is set to 0 (unlocked) for maximum performance on modern hardware. However, the original game engine was designed to run at 30 FPS. Unlocked framerates can cause strange physics bugs, making specific missions becoming impossible to complete. If you get stuck due to physics, change the FPS limit to 30 in the game menu.</p></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">My device is getting very hot. How do I fix this?</button>
+                    <div class="faq-answer"><p>Running a full 3D game in a browser can be demanding. If you are playing on a mobile device or a low-end laptop that is overheating or draining battery too quickly, we recommend restricting the frame rate to 30 or 60. This reduces the load on your processor and provides a much more stable experience for long play sessions.</p></div>
+                </div>
+            </div>
+        </div>
+        <div class="cnt-ft"></div>
+    </div>
+</div>
+
+<div id="col-R">
+    <div class="nav-box">
+    <div class="nav-head"><h5>Featured Apps</h5></div>
+    <div class="nav-filler">
+        <div class="nav-links">
+            <ul id="dynamic-apps-list">
+                <li><a href="/apps/">Loading Apps...</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="nav-ft"></div>
+</div>
+
+<script>
+(function() {
+    const allApps = [
+        { name: "GTA 3", url: "/apps/iii-online/" },
+        { name: "Vice City", url: "/apps/vice-city/" },
+        { name: "Minecraft", url: "/apps/minecraft/" },
+        { name: "Reborn XP", url: "/apps/reborn-xp/" },
+        { name: "3D Pinball", url: "/apps/3d-pinball-space-cadet/" },
+        { name: "Console Emulator", url: "/apps/emulator/" },
+        { name: "SWF Player", url: "/apps/swf-player/" },
+        { name: "Macintosh Classic", url: "/apps/minivmac/" },
+        { name: "Hacker Simulator", url: "/apps/hacker-simulator/" },
+        { name: "Angry Birds Chrome", url: "/apps/angry-birds-chrome/" }
+    ];
+
+    const currentPath = window.location.pathname.replace(/\/+$/, "");
+
+    const availableApps = allApps.filter(app => {
+        const appPath = app.url.replace(/\/+$/, "");
+        return !currentPath.includes(appPath);
+    });
+
+    for (let i = availableApps.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [availableApps[i], availableApps[j]] = [availableApps[j], availableApps[i]];
+    }
+
+    const selectedApps = availableApps.slice(0, 5);
+    const listContainer = document.getElementById('dynamic-apps-list');
+    
+    if(listContainer) {
+        let html = '';
+        selectedApps.forEach(app => {
+            html += `<li><a href="${app.url}">${app.name}</a></li>`;
+        });
+        listContainer.innerHTML = html;
+    }
+})();
+</script>
+    <div class="nav-box">
+        <div class="nav-head"><h5>Community</h5></div>
+        <div class="nav-filler">
+            <div class="nav-links">
+                <ul>
+                    <li><a href="https://kwenk.com" target="_blank">Kwenk</a></li>
+                    <li><a href="/about/">About Quenq</a></li>
+                    <li><a href="/contact/">Contact Us</a></li>
+                    <li><a href="https://dsc.gg/quenq" target="_blank">Join our Discord</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="nav-ft"></div>
+</div>
+    <div class="nav-box">
+       <!--<div class="nav-head"><h5>Sponsored</h5></div>
+        <div class="nav-filler" style="text-align:center;">-->
+            <!-- Sidebar -->
+            <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-9156391108980330" data-ad-slot="2318258028" data-ad-format="auto" data-full-width-responsive="true"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        <!--</div>
+        <div class="nav-ft"></div>-->
+</div>
+</div>
+
+    </div>
+  </div>
+
+  <div id="footer">
+    <div id="foot-info">
+      <div class="footer-column">
+        <div class="ft-title">Quick Links</div>
+        <div class="ft-links">
+          <ul>
+            <li><a href="/arcade/">The Flash Arcade</a></li>
+            <li><a href="/apps/">The Apps Library</a></li>
+            <li><a href="/directory/">The Directory</a></li>
+            <li><a href="/blog/">The Archives</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-column">
+        <div class="ft-title">Community</div>
+        <div class="ft-links">
+          <ul>
+            <li><a href="https://kwenk.com" target="_blank">Kwenk</a></li>
+            <li><a href="/about/">About Us</a></li>
+            <li><a href="/contact/">Contact</a></li>
+            <li><a href="https://dsc.gg/quenq" target="_blank" rel="noopener noreferrer">Join Our Discord</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-column">
+        <p class="ft-title">Project Quenq</p>
+        <div class="ft-links legal-links">
+          <ul>
+            <li><a href="/privacy-policy/">Privacy Policy</a></li>
+            <li><a href="/terms-of-service/">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    window.onload = () => {
+        const iframe = document.getElementById('app-iframe');
+        const fullscreenBtn = document.getElementById('fullscreen-btn');
+        const shareBtn = document.getElementById('share-btn');
+
+        function focusGame() {
+            if (iframe && iframe.contentWindow) {
+                try { iframe.contentWindow.focus(); } catch(e) {}
+            }
+        }
+
+        document.querySelector('.app-container').addEventListener('click', focusGame);
+
+        fullscreenBtn.addEventListener('click', e => {
+            e.preventDefault();
+            if (iframe.requestFullscreen) { iframe.requestFullscreen(); } 
+            else if (iframe.webkitRequestFullscreen) { iframe.webkitRequestFullscreen(); }
+            
+            if ('keyboard' in navigator && 'lock' in navigator.keyboard) {
+                navigator.keyboard.lock(['Escape']).catch(err => {});
+            }
+            setTimeout(focusGame, 100);
+        });
+
+        if (shareBtn) {
+            shareBtn.addEventListener('click', async e => {
+                e.preventDefault();
+                const shareUrl = 'https://quenq.com/apps';
+                const shareData = {
+                    title: 'Quenq',
+                    text: 'Check out this app on Quenq.',
+                    url: shareUrl
+                };
+                try {
+                    if (navigator.share) { await navigator.share(shareData); }
+                    else { await navigator.clipboard.writeText(shareUrl); alert('Link copied to clipboard!'); }
+                } catch (err) {
+                    if (err.name === 'AbortError') return;
+                    console.error('Share error:', err);
+                    navigator.clipboard.writeText(shareUrl);
+                    alert('Could not share. Link copied to clipboard instead!');
+                }
+            });
+        }
+
+        document.addEventListener('fullscreenchange', () => {
+            if (!document.fullscreenElement && !document.webkitFullscreenElement) {
+                if ('keyboard' in navigator && 'unlock' in navigator.keyboard) {
+                    navigator.keyboard.unlock();
+                }
+            }
+        });
+
+        const faqItems = document.querySelectorAll('.faq-item');
+        faqItems.forEach(item => {
+            const question = item.querySelector('.faq-question');
+            const answer = item.querySelector('.faq-answer');
+            question.addEventListener('click', () => {
+                const is_open = item.classList.toggle('open');
+                answer.style.maxHeight = is_open ? answer.scrollHeight + "px" : null;
+            });
+        });
+    };
+</script>
+
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const loader = document.getElementById('global-loader');
+      if (loader) {
+        setTimeout(function () {
+          loader.classList.add('loader-hidden');
+        }, 500);
+      }
+
+      const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) ||
+        (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+
+      const fullscreenBtn = document.getElementById('fullscreen-btn');
+      const container = document.querySelector('.app-container');
+
+      if (fullscreenBtn && container) {
+        let exitBtn = container.querySelector('.pseudo-exit-btn');
+        if (!exitBtn) {
+          exitBtn = document.createElement('button');
+          exitBtn.className = 'pseudo-exit-btn';
+          exitBtn.setAttribute('type', 'button');
+          exitBtn.setAttribute('aria-label', 'Exit Fullscreen');
+          exitBtn.setAttribute('title', 'Exit Fullscreen');
+          exitBtn.innerHTML = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>';
+          container.appendChild(exitBtn);
+        }
+
+        function togglePseudoFullscreen(enable) {
+          const active = (typeof enable === 'boolean') ? enable : !container.classList.contains('is-pseudo-fullscreen');
+          if (active) {
+            container.classList.add('is-pseudo-fullscreen');
+            document.documentElement.classList.add('pseudo-fullscreen-active');
+            document.body.classList.add('pseudo-fullscreen-active');
+          } else {
+            container.classList.remove('is-pseudo-fullscreen');
+            document.documentElement.classList.remove('pseudo-fullscreen-active');
+            document.body.classList.remove('pseudo-fullscreen-active');
+          }
+        }
+
+        exitBtn.addEventListener('click', function (e) {
+          e.preventDefault();
+          e.stopPropagation();
+          togglePseudoFullscreen(false);
+        });
+
+        if (isIOS || !document.fullscreenEnabled) {
+          fullscreenBtn.addEventListener('click', function (e) {
+            e.preventDefault();
+            e.stopImmediatePropagation();
+            togglePseudoFullscreen();
+          }, true);
+        }
+
+        document.addEventListener('keydown', function (e) {
+          if (e.key === 'Escape' && container.classList.contains('is-pseudo-fullscreen')) {
+            togglePseudoFullscreen(false);
+          }
+        });
+      }
+    });
+  </script>
+
+
+</body></html>
